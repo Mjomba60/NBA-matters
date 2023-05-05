@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Details(){
+export default function Details({keys, values}){
 
-    return <label></label>
+    return <div className="details">
+        
+    </div>
 }
