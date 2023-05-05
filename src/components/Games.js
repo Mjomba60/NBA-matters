@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import Details from "./Details";
 
  export default function Games(){
     const [games, setGames] = useState([])
@@ -13,7 +11,27 @@ import Details from "./Details";
     }, [])
 
     const game = games.map(g => {
-        return <p key={g.id}> {g.home_team.full_name} vs {g.visitor_team.full_name}</p>
+        return <dl key={g.id}>
+        <dt>
+            <label>home team score : visitor team score </label>
+            {g.home_team_score} : {g.visitor_team_score}
+        </dt>
+        <dd>
+            <label>Name : </label>
+            {g.home_team.full_name}  vs  {g.visitor_team.full_name}
+        </dd>
+        <dd>
+            <label>period : </label>
+            {g.period}</dd>
+        <dd>
+            <label>status : </label>
+            {g.status}
+        </dd>
+        <dd>
+        <label>postSeason : </label>
+            {g.postSeason}
+        </dd>
+    </dl>
     })
 
     return <div>
