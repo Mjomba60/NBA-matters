@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import Details from "./Details";
 
 export default function Teams(){
     const [teams, setTeams] = useState([])
