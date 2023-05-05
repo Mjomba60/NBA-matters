@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import Details from "./Details";
 
 export default function Teams(){
     const [teams, setTeams] = useState([])
@@ -11,7 +10,28 @@ export default function Teams(){
     },[])
 
     const team = teams.map(t => {
-        return <p key={t.id}>{t.full_name}</p>
+        return <dl>
+                <dt>
+                    <label>Team Name : </label>
+                    {t.full_name}
+                </dt>
+                <dd>
+                    <label>City : </label>
+                    {t.city}
+                </dd>
+                <dd>
+                    <label>confrence : </label>
+                    {t.conference}</dd>
+                <dd>
+                    <label>division : </label>
+                    {t.division}
+                </dd>
+                <dd>
+                <label>name : </label>
+                    {t.name}
+                </dd>
+            </dl>
+        
     })
 
     return <div id="teams">
