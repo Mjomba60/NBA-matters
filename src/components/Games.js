@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import Details from "./Details";
 
  export default function Games(){
     const [games, setGames] = useState([])
+    
+
     useEffect(()=>{
         fetch("https://www.balldontlie.io/api/v1/games")
         .then(r => r.json())
