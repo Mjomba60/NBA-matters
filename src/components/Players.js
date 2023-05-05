@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
 export default function Players(){
@@ -10,9 +9,28 @@ export default function Players(){
     .then(r => r.json())
     .then(resp => setPlayers(resp.data))
 },[])
-    const history = useHistory
     const player = players.map(player => {
-        return <p key = {player.id}>{player.first_name} {player.last_name}</p>
+        return <dl key={player.id}>
+        <dt>
+            <label>Full Name : </label>
+            {player.first_name} {player.last_name}
+        </dt>
+        <dd>
+            <label>First Name : </label>
+            {player.first_name}
+        </dd>
+        <dd>
+            <label>Last Name : </label>
+            {player.last_name}</dd>
+        <dd>
+            <label>position : </label>
+            {player.position}
+        </dd>
+        <dd>
+        <label>name : </label>
+            {player.team.full_name}
+        </dd>
+    </dl>
     })
     return <div id="players">
             {player}
