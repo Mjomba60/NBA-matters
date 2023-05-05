@@ -10,7 +10,7 @@ export default function Teams(){
     },[])
 
     const team = teams.map(t => {
-        return <dl>
+        return <dl key={t.id}>
                 <dt>
                     <label>Team Name : </label>
                     {t.full_name}
