@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# NBA Matters
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Table of Content
+- [NBA Matters](#nba-matters)
+    - [Table of Content](#table-of-content)
+  - [Project Description](#project-description)
+    - [User Operations](#user-operations)
+      - [project preview](#project-preview)
+  - [Languages and Frameworks](#languages-and-frameworks)
+  - [Setup Instructions](#setup-instructions)
+  - [Link to Live Site](#link-to-live-site)
+  - [Author](#author)
 
-## Available Scripts
+## Project Description
+----------
+NBA Matters is your full on store for information concerning basketball. It contains informtion starting from players in the NBA to matches scheduled to be played. There is also teams which provide vast information. The application is user friendly and easy to interact with.
 
-In the project directory, you can run:
+### User Operations
+----------
+- View a list of NBA players
+- View a list of teams
+- View stats for available matches
+- View a single player's details
+- view a single team's details
+- View a list of available matches
 
-### `npm start`
+#### project preview
+![List of NBA players](./public/Assets/players.png)
+List of NBA players
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![List of teams](./public/Assets/teams.png)
+List of teams
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![List of matches](./public/Assets/matches.png)
+List of matches
 
-### `npm test`
+![details of match](./public/Assets/singleMtachdetails.png)
+details of match
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Languages and Frameworks
+----------
+- Html
+- JavaScript
+- React Js
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup Instructions
+----------
+**ensure you have npm installed** else [click here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to download and install npm and node.js
+To get the project working, perform the following steps;
+  1. Clone this repository to your machine
+    - run `git clone [url]` passing the url or ssh provided by github
+  2. run `npm install` then `npm start` to start the application
+  3. run `npm run watch` to start the json-server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Link to Live Site
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+[George Samuel](https://www.linkedin.com/in/george-samuel-504125222)
+ 
