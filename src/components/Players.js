@@ -1,38 +1,27 @@
 import React, {useState, useEffect} from "react";
 
 
-export default function Players(){
+export default function Players({selectObj, selectOrigin}){
 
     const [players, setPlayers] = useState([])
+
+    //fetch data from server to display
     useEffect(() => {
     fetch("https://www.balldontlie.io/api/v1/players")
     .then(r => r.json())
     .then(resp => setPlayers(resp.data))
 },[])
+
+    // iterate through received array and display data
     const player = players.map(player => {
-        return <dl key={player.id}>
-        <dt>
-            <label>Full Name : </label>
-            {player.first_name} {player.last_name}
-        </dt>
-        <dd>
-            <label>First Name : </label>
-            {player.first_name}
-        </dd>
-        <dd>
-            <label>Last Name : </label>
-            {player.last_name}</dd>
-        <dd>
-            <label>position : </label>
-            {player.position}
-        </dd>
-        <dd>
-        <label>name : </label>
-            {player.team.full_name}
-        </dd>
-    </dl>
+        return <div className="mplayers" key={player.id} onClick = {() => {selectObj(player)
+            selectOrigin("players")}}>
+            <p>{player.first_name} {player.last_name}</p>
+            <p className="time"><strong>team :</strong>{player.team.name}</p>
+            </div>
     })
     return <div id="players">
+        <h3>Players</h3>
             {player}
             </div>
 }
