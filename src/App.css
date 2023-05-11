@@ -4,12 +4,15 @@
 a{
   margin: 6px;
   border-style: groove;
-  background-color: burlywood;
+  background-color: #00C255;
+  width: 150px;
+  height: 35px;
 }
 .App-header{
   font-size: 30px;
-  background-color: aquamarine;
-  margin: 24px;
+  background-color: #BBA89C;
+  padding: 17px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 label{
@@ -20,4 +23,54 @@ label{
 dt{
   margin-bottom: 9px;
   margin-top: 17px;
+}
+
+.searchNdetails{
+  display: flex;
+  justify-content: space-around;
+  background-color: #DFE0DF;
+}
+
+#games, #players, #teams{
+  width: 500px;
+  font-size: 22px;
+  background-color: #FFBFBE;
+}
+
+.details{
+  width: 500px;
+  font-size: 21px;
+  background-color: #63BAAB;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #006B5E;
+    color: #DFE0DF;
+    font-size: 19px;
+    border-radius: 12px;
+}
+
+.matches, .mteams, .mplayers{
+  display: inline-block;
+  text-align: start;
+  border-style: groove;
+  width: 350px;
+  margin: 7px;
+}
+
+.time{
+  font-size: 15px;
+}
+
+label{
+  text-align: start;
+  font-size: 19px;
+  margin-right: 17px;
+}
+
+.detailed{
+  display: flex;
+  align-items: center;
 }
