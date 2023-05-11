@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-export default function Teams(){
+export default function Teams({selectObj, selectOrigin}){
     const [teams, setTeams] = useState([])
 
     useEffect(() => {
@@ -10,31 +10,16 @@ export default function Teams(){
     },[])
 
     const team = teams.map(t => {
-        return <dl key={t.id}>
-                <dt>
-                    <label>Team Name : </label>
-                    {t.full_name}
-                </dt>
-                <dd>
-                    <label>City : </label>
-                    {t.city}
-                </dd>
-                <dd>
-                    <label>confrence : </label>
-                    {t.conference}</dd>
-                <dd>
-                    <label>division : </label>
-                    {t.division}
-                </dd>
-                <dd>
-                <label>name : </label>
-                    {t.name}
-                </dd>
-            </dl>
+        return <div className="mteams" key={t.id} onClick = {() => {selectObj(t)
+            selectOrigin("teams")}}>
+            <p>{t.full_name}</p>
+            <p className="time"><strong>city : </strong>{t.city}</p>
+            </div>
         
     })
 
     return <div id="teams">
+        <h3>Teams</h3>
             {team}
             </div>
 }
